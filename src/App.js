@@ -1,8 +1,8 @@
 import Intro from './Components/Intro/Intro';
 import Services from './Components/Services/Services';
 import Experience from './Components/Experience/Experience';
-// import Works from './components/Works/Works';
-// import Portfolio from './components/Portfolio/Portfolio';
+import Works from './Components/Works/Works';
+import Portfolio from './Components/Portfolio/Portfolio';
 // import Testimonial from './components/Testimonials/Testimonial';
 // import Contact from './components/Contact/Contact';
 // import Footer from './components/Footer/Footer';
