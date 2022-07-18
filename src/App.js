@@ -5,7 +5,7 @@ import Works from './Components/Works/Works';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Testimonial from './Components/Testimonials/Testimonial';
 import Contact from './Components/Contact/Contact';
-// import Footer from './components/Footer/Footer';
+import Footer from './Components/Footer/Footer';
 // import { useContext } from 'react';
 // import { themeContext } from './Context';
 import './App.css';
