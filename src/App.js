@@ -1,6 +1,6 @@
 import Intro from './Components/Intro/Intro';
 import Services from './Components/Services/Services';
-// import Experience from './components/Experience/Experience';
+import Experience from './Components/Experience/Experience';
 // import Works from './components/Works/Works';
 // import Portfolio from './components/Portfolio/Portfolio';
 // import Testimonial from './components/Testimonials/Testimonial';
