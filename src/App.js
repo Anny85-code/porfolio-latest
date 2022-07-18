@@ -4,7 +4,7 @@ import Experience from './Components/Experience/Experience';
 import Works from './Components/Works/Works';
 import Portfolio from './Components/Portfolio/Portfolio';
 import Testimonial from './Components/Testimonials/Testimonial';
-// import Contact from './components/Contact/Contact';
+import Contact from './Components/Contact/Contact';
 // import Footer from './components/Footer/Footer';
 // import { useContext } from 'react';
 // import { themeContext } from './Context';
