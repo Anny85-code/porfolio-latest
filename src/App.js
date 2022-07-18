@@ -1,5 +1,5 @@
 import Intro from './Components/Intro/Intro';
-// import Services from './components/Services/Services';
+import Services from './Components/Services/Services';
 // import Experience from './components/Experience/Experience';
 // import Works from './components/Works/Works';
 // import Portfolio from './components/Portfolio/Portfolio';
@@ -24,13 +24,13 @@ function App() {
     >
       <Navbar />
       <Intro />
-      {/* <Services />
+      <Services />
       <Experience />
       <Works />
       <Portfolio />
       <Testimonial />
       <Contact />
-      <Footer />  */}
+      <Footer /> 
     </div>
   );
 }
