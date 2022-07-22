@@ -26,11 +26,11 @@ const Services = () => {
         {/* dark mode */}
         <span style={{ color: darkMode ? 'white' : '' }}>My Awesome</span>
         <span>services</span>
-        <spane>
+        <span>
           Custom software development, web apllication development, web design
           <br />
           mobile application development, quality assurance
-        </spane>
+        </span>
         {/* <a href={Resume} download></a> */}
 
         <a
