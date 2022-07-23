@@ -1,7 +1,7 @@
 import React, { useContext } from "react";
 import "./Intro.css";
 import Vector1 from "../../img/Vector1.png";
-import Vector2 from "../../img/Vector2.png";
+import purpleblur2 from '../../img/purpleblur2.png';
 import anny1 from "../../img/anny1.png";
 import glassesimoji from "../../img/glassesimoji.png";
 import thumbup from "../../img/thumbup.png";
@@ -27,8 +27,8 @@ const Intro = () => {
       <div className='i-left'>
         <div className='i-name'>
           {/* yahan change hy darkmode ka */}
-          <span style={{ color: darkMode ? 'white' : '' }}>Hy! I Am</span>
-          <span>Anny Udo</span>
+          <span style={{ color: darkMode ? 'white' : '' }}>Hi! I Am</span>
+          <span>Anny</span>
           <span>
             Frontend Developer with high level of experience in web designing
             and development, producting the Quality work
@@ -53,7 +53,7 @@ const Intro = () => {
       {/* right image side */}
       <div className='i-right'>
         <img src={Vector1} alt='' />
-        <img src={Vector2} alt='' />
+        <img src={purpleblur2} alt='' />
         <img className='intro-img' src={anny1} alt='' />
         {/* animation */}
         <motion.img
