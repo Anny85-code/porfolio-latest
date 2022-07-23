@@ -11,9 +11,9 @@ const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
   return (
-    <div className="portfolio" id="portfolio">
+    <div className='portfolio' id='portfolio'>
       {/* heading */}
-      <span style={{color: darkMode?'white': ''}}>Recent Projects</span>
+      <span style={{ color: darkMode ? 'white' : '' }}>Recent Projects</span>
       <span>Portfolio</span>
 
       {/* slider */}
@@ -21,19 +21,23 @@ const Portfolio = () => {
         spaceBetween={30}
         slidesPerView={3}
         grabCursor={true}
-        className="portfolio-slider"
+        className='portfolio-slider'
       >
         <SwiperSlide>
-          <img src={Sidebar} alt="" />
+          <img src={Sidebar} alt='' />
+          <div className='button-img'>
+            <button className='button-img-inner'>see more</button>
+            <button className='button-img-inner'>see live</button>
+          </div>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={Ecommerce} alt="" />
+          <img src={Ecommerce} alt='' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={MusicApp} alt="" />
+          <img src={MusicApp} alt='' />
         </SwiperSlide>
         <SwiperSlide>
-          <img src={HOC} alt="" />
+          <img src={HOC} alt='' />
         </SwiperSlide>
       </Swiper>
     </div>
