@@ -31,8 +31,6 @@ const Services = () => {
           <br />
           mobile application development, quality assurance
         </span>
-        {/* <a href={Resume} download></a> */}
-
         <a
           href='https://docs.google.com/document/d/e/2PACX-1vTq31MWjNhonbx3Xk2Ds7A0e0VW-6uWZQ16uuMJSCoQaE8RE9mdagYJaGVcNPHkwNrc7eDwYezc4EAM/pub'
           download
