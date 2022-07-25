@@ -24,20 +24,28 @@ const Portfolio = () => {
         className='portfolio-slider'
       >
         <SwiperSlide>
-          <img src={budget} alt='' />
-          <div className='button-img'>
-            <button className='button-img-inner'>see more</button>
-            <button className='button-img-inner'>see live</button>
-          </div>
+          <a href='https://github.com/Anny85-code/budget-app'>
+            <img src={budget} alt='' />
+          </a>
+          {/* <div className='button-img'>
+            <button className='button-img-inner button'>see more</button>
+            <button className='button-img-inner button'>see live</button>
+          </div> */}
         </SwiperSlide>
         <SwiperSlide>
-          <img src={dravel} alt='' />
+          <a href='https://github.com/Anny85-code/dravel_app'>
+            <img src={dravel} alt='' />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
-          <img src={food} alt='' />
+          <a href='https://github.com/Anny85-code/food-recipe'>
+            <img src={food} alt='' />
+          </a>
         </SwiperSlide>
         <SwiperSlide>
+          <a href='https://github.com/Anny85-code/seafoodmenu'>
           <img src={seaport} alt='' />
+          </a>
         </SwiperSlide>
       </Swiper>
     </div>
