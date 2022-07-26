@@ -1,18 +1,52 @@
 # My portfolio website!
 
-This is my portfolio web site, that showcases my profile and projects, it is one of my pet projects. build with JavaScript and very interactive. Some of the features includes, the projects pop up modal which highlights every projects in the portfolio.. all templates are taken from figma.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app). It is my portfolio web site, that showcases my profile and projects, it is one of my pet projects. build with React and it is very interactive. Some of the features includes, the projects swipe section which highlights every projects in the portfolio..
 
-![portfolio-L](https://user-images.githubusercontent.com/87186552/150668563-2ef8f10d-19d2-4cee-b5d0-42cdbd23684b.png)
 
-# Built With
-
-- Html
-- Css
-- JavaScript
+Image Preview |
+| :---: | 
+![annyportfolio](https://user-images.githubusercontent.com/87186552/180948131-790c615e-f648-4b11-b170-ad4ec04145d9.png) 
 
 ## Live Demo
 
 You can check it out at https://anny85-code.github.io/Portfolio-Microverse/
+
+# Built With
+
+- React
+- Css
+- Bootstrap
+- JavaScript
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+
 
 👤 **Author**
 
