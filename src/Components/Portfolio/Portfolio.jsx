@@ -24,7 +24,11 @@ const Portfolio = () => {
         className='portfolio-slider'
       >
         <SwiperSlide>
-          <a href='https://github.com/Anny85-code/budget-app'>
+          <a
+            href='https://github.com/Anny85-code/budget-app'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
             <img src={budget} alt='' />
           </a>
           {/* <div className='button-img'>
