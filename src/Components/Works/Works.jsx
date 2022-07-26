@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import { motion } from 'framer-motion';
-import {Link} from 'react-scroll'
+import { Link } from 'react-scroll'
 import { themeContext } from '../../Context';
 import javascript from '../../img/javascript.png';
 import react from '../../img/react.png';
