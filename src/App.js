@@ -1,3 +1,4 @@
+import { useContext } from 'react';
 import Intro from './Components/Intro/Intro';
 import Services from './Components/Services/Services';
 import Experience from './Components/Experience/Experience';
@@ -6,17 +7,16 @@ import Portfolio from './Components/Portfolio/Portfolio';
 import Testimonial from './Components/Testimonials/Testimonial';
 import Contact from './Components/Contact/Contact';
 import Footer from './Components/Footer/Footer';
-import { useContext } from 'react';
 import { themeContext } from './Context';
 import './App.css';
 import Navbar from './Components/Navbar/Navbar';
 
 function App() {
   const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  const { darkMode } = theme.state;
   return (
     <div
-      className='App'
+      className="App"
       style={{
         background: darkMode ? 'black' : '',
         color: darkMode ? 'white' : '',
@@ -30,7 +30,7 @@ function App() {
       <Portfolio />
       <Testimonial />
       <Contact />
-      <Footer /> 
+      <Footer />
     </div>
   );
 }
