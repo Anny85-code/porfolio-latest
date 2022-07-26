@@ -1,6 +1,6 @@
 import React from 'react';
 
-import './FloatingDiv.css'
+import './FloatingDiv.css';
 /* eslint-disable */
 const FloatinDiv = ({ img, text1, text2 }) => {
   return (
