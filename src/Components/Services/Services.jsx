@@ -20,9 +20,9 @@ const Services = () => {
   };
 
   return (
-    <div className='services' id='services'>
+    <div className="services" id="services">
       {/* left side */}
-      <div className='awesome'>
+      <div className="awesome">
         {/* dark mode */}
         <span style={{ color: darkMode ? 'white' : '' }}>My Awesome</span>
         <span>services</span>
@@ -32,17 +32,17 @@ const Services = () => {
           mobile application development, quality assurance
         </span>
         <a
-          href='https://docs.google.com/document/d/e/2PACX-1vTq31MWjNhonbx3Xk2Ds7A0e0VW-6uWZQ16uuMJSCoQaE8RE9mdagYJaGVcNPHkwNrc7eDwYezc4EAM/pub'
-          target='_blank'
-          rel='noopener noreferrer'
+          href="https://docs.google.com/document/d/e/2PACX-1vTq31MWjNhonbx3Xk2Ds7A0e0VW-6uWZQ16uuMJSCoQaE8RE9mdagYJaGVcNPHkwNrc7eDwYezc4EAM/pub"
+          target="_blank"
+          rel="noopener noreferrer"
           download
         >
-          <button className='button s-button'> Get my resume</button>
+          <button type="button" className="button s-button"> Get my resume</button>
         </a>
-        <div className='blur s-blur1' style={{ background: '#ABF1FF94' }}></div>
+        <div className="blur s-blur1" style={{ background: '#ABF1FF94' }} />
       </div>
       {/* right */}
-      <div className='cards'>
+      <div className="cards">
         {/* first card */}
         <motion.div
           initial={{ left: '25rem' }}
@@ -51,8 +51,8 @@ const Services = () => {
         >
           <Card
             emoji={HeartEmoji}
-            heading={'Design'}
-            detail={'Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd'}
+            heading="Design"
+            detail="Figma, Sketch, Photoshop, Adobe Illustrator, Adobe xd"
           />
         </motion.div>
         {/* second card */}
@@ -63,8 +63,8 @@ const Services = () => {
         >
           <Card
             emoji={Glasses}
-            heading={'Developer'}
-            detail={'Html, Css, JavaScript, React, Ruby, Rails,Postgresql'}
+            heading="Developer"
+            detail="Html, Css, JavaScript, React, Ruby, Rails,Postgresql"
           />
         </motion.div>
         {/* 3rd */}
@@ -75,17 +75,12 @@ const Services = () => {
         >
           <Card
             emoji={Humble}
-            heading={'UI/UX'}
-            detail={
-              'Axure Ux prototypes, Framer, UXPin, Invision, FlowMapp, Origami Studio'
-            }
-            color='rgba(252, 166, 31, 0.45)'
+            heading="UI/UX"
+            detail="Axure Ux prototypes, Framer, UXPin, Invision, FlowMapp, Origami Studio"
+            color="rgba(252, 166, 31, 0.45)"
           />
         </motion.div>
-        <div
-          className='blur s-blur2'
-          style={{ background: 'var(--purple)' }}
-        ></div>
+        <div className="blur s-blur2" style={{ background: 'var(--purple)' }} />
       </div>
     </div>
   );
