@@ -9,7 +9,7 @@ Image Preview |
 
 ## Live Demo
 
-You can check it out at https://anny85-code.github.io/Portfolio-Microverse/
+You can check it out at [link](https://anny-portfolio.herokuapp.com/)
 
 # Built With
 
