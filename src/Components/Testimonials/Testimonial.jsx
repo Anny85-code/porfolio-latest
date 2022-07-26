@@ -1,14 +1,14 @@
-import React from "react";
-import "./Testimonial.css";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
+import React from 'react';
+import './Testimonial.css';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
 
-import { Pagination } from "swiper";
-import "swiper/css/pagination";
-import kandi from "../../img/kandi.jpg";
-import dejan from "../../img/dejan.png";
-import adorn from "../../img/adorn.png";
-import clinton from "../../img/clinton.jpg";
+import { Pagination } from 'swiper';
+import 'swiper/css/pagination';
+import kandi from '../../img/kandi.jpg';
+import dejan from '../../img/dejan.png';
+import adorn from '../../img/adorn.png';
+import clinton from '../../img/clinton.jpg';
 
 const Testimonial = () => {
   const clients = [
@@ -40,12 +40,13 @@ const Testimonial = () => {
         <span>Clients and Colleagues </span>
         <span>have this </span>
         <span>to say...</span>
-      <div className="blur t-blur1" style={{ background: "var(--purple)" }}></div>
-      <div className="blur t-blur2" style={{ background: "skyblue" }}></div>
+        <div className="blur t-blur1" style={{ background: 'var(--purple)' }} />
+        <div className="blur t-blur2" style={{ background: 'skyblue' }} />
 
       </div>
       <Swiper
         // install Swiper modules
+        /* eslint-disable */
         modules={[Pagination]}
         slidesPerView={1}
         pagination={{ clickable: true }}
@@ -64,5 +65,5 @@ const Testimonial = () => {
     </div>
   );
 };
-
+/* eslint-enable */
 export default Testimonial;
