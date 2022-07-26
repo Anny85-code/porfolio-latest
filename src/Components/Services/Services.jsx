@@ -1,22 +1,22 @@
-import React, { useContext } from "react";
-import "./Services.css";
-import Card from "../Card/Card";
-import HeartEmoji from "../../img/heartemoji.png";
-import Glasses from "../../img/glasses.png";
-import Humble from "../../img/humble.png";
-import { themeContext } from "../../Context";
-import { motion } from "framer-motion";
+import React, { useContext } from 'react';
+import { motion } from 'framer-motion';
+import './Services.css';
+import Card from '../Card/Card';
+import HeartEmoji from '../../img/heartemoji.png';
+import Glasses from '../../img/glasses.png';
+import Humble from '../../img/humble.png';
+import { themeContext } from '../../Context';
 // import Resume from './resume.pdf';
 
 const Services = () => {
   // context
   const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  const { darkMode } = theme.state;
 
   // transition
   const transition = {
     duration: 1,
-    type: "spring",
+    type: 'spring',
   };
 
   return (
@@ -33,7 +33,8 @@ const Services = () => {
         </span>
         <a
           href='https://docs.google.com/document/d/e/2PACX-1vTq31MWjNhonbx3Xk2Ds7A0e0VW-6uWZQ16uuMJSCoQaE8RE9mdagYJaGVcNPHkwNrc7eDwYezc4EAM/pub'
-          target='_blank' rel="noopener noreferrer"
+          target='_blank'
+          rel='noopener noreferrer'
           download
         >
           <button className='button s-button'> Get my resume</button>
