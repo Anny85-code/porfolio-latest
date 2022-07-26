@@ -7,6 +7,7 @@ import dravel from "../../img/dravel.png";
 import food from "../../img/food.png";
 import seaport from "../../img/seaport.png";
 import { themeContext } from "../../Context";
+
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const darkMode = theme.state.darkMode;
@@ -31,10 +32,6 @@ const Portfolio = () => {
           >
             <img src={budget} alt='' />
           </a>
-          {/* <div className='button-img'>
-            <button className='button-img-inner button'>see more</button>
-            <button className='button-img-inner button'>see live</button>
-          </div> */}
         </SwiperSlide>
         <SwiperSlide>
           <a

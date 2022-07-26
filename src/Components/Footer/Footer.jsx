@@ -6,6 +6,9 @@ import Facebook from "@iconscout/react-unicons/icons/uil-facebook";
 import Gitub from "@iconscout/react-unicons/icons/uil-github";
 
 const Footer = () => {
+
+  const Foter = () => new Date().getFullYear();
+
   return (
     <div className="footer">
       <img src={secondwave2} alt="" style={{ width: "100%" }} />
@@ -16,6 +19,10 @@ const Footer = () => {
           <Facebook color="white" size={"3rem"} />
           <Gitub color="white" size={"3rem"} />
         </div>
+        
+        <span className="footer-co"> ©
+        {Foter()}
+        &nbsp;Anny Udo portfolio website</span>
       </div>
     </div>
   );

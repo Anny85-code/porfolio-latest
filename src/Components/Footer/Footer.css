@@ -13,7 +13,7 @@
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  margin-top: 6rem;
+  margin-top: 8rem;
   gap: 2rem;
   color: white;
 }
@@ -21,6 +21,11 @@
 .f-icons {
   display: flex;
   gap: 2rem;
+}
+
+.footer-co {
+  font-size: 15px;
+  margin-top: -20px;
 }
 
 @media screen and (max-width: 480px) {
