@@ -20,7 +20,7 @@ const Testimonial = () => {
     {
       img: dejan,
       review:
-        'I had the opportunity to work together with Aniekan on the same team. He is a great collaborator and teammate and always willing to help and share his knowledge with others. As a software developer Aniekanis focused on details and he has always worked hard to do a flawless job in all projects. He has been using his knowledge to mentor others and to help them on their first weeks in the program. He is totally reliable and has the potential to be a great leader.',
+        'I had the opportunity to work together with Aniekan on the same team. He is a great collaborator and teammate and always willing to help and share his knowledge with others. As a software developer Aniekan is focused on details and he has always worked hard to do a flawless job in all projects. He has been using his knowledge to mentor others and to help them on their first weeks in the program. He is totally reliable and has the potential to be a great leader.',
     },
     {
       img: adorn,
