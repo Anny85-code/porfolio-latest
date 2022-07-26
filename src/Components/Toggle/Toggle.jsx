@@ -1,15 +1,15 @@
-import React, { useContext } from "react";
-import "./Toggle.css";
-import Moon from "@iconscout/react-unicons/icons/uil-moon";
-import Sun from "@iconscout/react-unicons/icons/uil-sun";
-import { themeContext } from "../../Context";
-
+import React, { useContext } from 'react';
+import './Toggle.css';
+import Moon from '@iconscout/react-unicons/icons/uil-moon';
+import Sun from '@iconscout/react-unicons/icons/uil-sun';
+import { themeContext } from '../../Context';
+/* eslint-disable */
 const Toggle = () => {
   const theme = useContext(themeContext);
-  const darkMode = theme.state.darkMode;
+  const { darkMode } = theme.state;
   const handleClick = () => {
     // debugger
-    theme.dispatch({ type: "toggle" });
+    theme.dispatch({ type: 'toggle' });
   };
   return (
     <div className="toggle" onClick={handleClick}>
@@ -24,5 +24,5 @@ const Toggle = () => {
     </div>
   );
 };
-
+/* eslint-enable */
 export default Toggle;
