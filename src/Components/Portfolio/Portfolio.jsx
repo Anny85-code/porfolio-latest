@@ -33,18 +33,18 @@ const Portfolio = () => {
           </div> */}
         </SwiperSlide>
         <SwiperSlide>
-          <a href='https://github.com/Anny85-code/dravel_app'>
+          <a href='https://github.com/Anny85-code/dravel_app' target='_blank'>
             <img src={dravel} alt='' />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href='https://github.com/Anny85-code/food-recipe'>
+          <a href='https://github.com/Anny85-code/food-recipe' target='_blank'>
             <img src={food} alt='' />
           </a>
         </SwiperSlide>
         <SwiperSlide>
-          <a href='https://github.com/Anny85-code/seafoodmenu'>
-          <img src={seaport} alt='' />
+          <a href='https://github.com/Anny85-code/seafoodmenu' target='_blank'>
+            <img src={seaport} alt='' />
           </a>
         </SwiperSlide>
       </Swiper>

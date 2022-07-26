@@ -33,6 +33,7 @@ const Services = () => {
         </span>
         <a
           href='https://docs.google.com/document/d/e/2PACX-1vTq31MWjNhonbx3Xk2Ds7A0e0VW-6uWZQ16uuMJSCoQaE8RE9mdagYJaGVcNPHkwNrc7eDwYezc4EAM/pub'
+          target='_blank'
           download
         >
           <button className='button s-button'> Get my resume</button>
