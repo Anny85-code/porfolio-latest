@@ -34,7 +34,7 @@ const Intro = () => {
           <span>Anny</span>
           <span>
             Full-Stack Developer with high level of experience in web designing
-            and development, producting the Quality work
+            and development, maintain the databases,  and handle backend operations of the application, and ensure an error-free development testing and deploying the application as well.
           </span>
         </div>
         <Link to='contact' smooth spy>
