@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import Toggle from '../Toggle/Toggle';
+import Anny from '../../img/Anny.png';
+// import annyman from '../../img/annyman.png';
 import './Navbar.css';
 /* eslint-disable */
 const Navbar = () => {
@@ -8,7 +10,9 @@ const Navbar = () => {
     <div className="n-wrapper" id="Navbar">
       {/* left */}
       <div className="n-left">
-        <div className="n-name">Anny</div>
+        {/* <div className="n-name">Anny</div> */}
+        <img src={Anny} alt="Anny" />
+        {/* <img src={annyman} alt="Anny" /> */}
         <Toggle />
       </div>
       {/* right */}

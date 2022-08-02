@@ -14,6 +14,13 @@
   gap: 2rem;
 }
 
+.n-left > img {
+  height: 3rem;
+  width: 9rem;
+  /* border-radius: 50%; */
+}
+
+
 .n-name {
   font-size: 1.3rem;
   font-weight: bold;
@@ -50,4 +57,13 @@
   .n-list {
     display: none;
   }
+
+  .n-left > img {
+  height: 2rem;
+  width: 6rem;
+}
+
+.n-left {
+  gap: 1px;
+}
 }
