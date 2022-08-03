@@ -80,17 +80,6 @@
   width: 100%;
 }
 
-.btn-nav {
-  position: fixed;
-  right: 40px;
-  top: 10px;
-  z-index: 10;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  font-weight: bold;
-}
-
 #menu-link {
   display: block;
   padding: 10px 40px;
@@ -98,6 +87,10 @@
   color: #3fffd2;
   text-transform: uppercase;
   font-weight: bold;
+}
+
+.btn-nav {
+  display: none;
 }
 
 @media screen and (max-width: 480px) {
@@ -123,4 +116,20 @@
   width: 100%;
 }
 
+.btn-nav {
+  position: fixed;
+  right: 20px;
+  top: 10px;
+  z-index: 10;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  font-weight: bold;
+  color: var(--orange);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: block;
+  }
+  
 }

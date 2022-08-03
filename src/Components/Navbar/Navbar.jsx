@@ -101,12 +101,18 @@ const Navbar = () => {
 
       <button className='btn-nav' type='button' onClick={handleToggle}>
         {navbarOpen ? (
-          <IoMdClose style={{ color: '#fff', width: '40px', height: '40px' }} />
+          <IoMdClose
+            style={{
+              color: 'var(--orange)',
+              width: '40px',
+              height: '40px',
+            }}
+          />
         ) : (
-          <FiMenu style={{ color: '#fff', width: '40px', height: '40px' }} />
+          <FiMenu style={{ color: 'var(--orange)', width: '40px', height: '40px' }} />
         )}
       </button>
-      <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`} >
+      <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
         {links.map((link) => (
           <li key={link.id}>
             <Link
