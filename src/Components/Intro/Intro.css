@@ -120,7 +120,7 @@
   .Intro {
     flex-direction: column;
     /* gap: 7rem; */
-    height: 64rem;
+    height: 54rem;
     margin-top: 5rem;
     padding: 1rem;
   }
@@ -128,6 +128,7 @@
   .i-right {
     transform: scale(0.8);
     left: -3rem;
+    margin-top: 4rem;
   }
 
   .i-right .blur {
@@ -144,7 +145,7 @@
   }
 
   .i-right > :nth-child(3) {
-    left: 28%;
+    left: 22%;
   }
 
   .i-icons {
@@ -156,6 +157,10 @@
   }
 
   .intro-img {
-  width: 20rem;
-}
+    width: 325px;
+  }
+
+  .i-right > :nth-child(1) {
+    left: -35%;
+  }
 }
