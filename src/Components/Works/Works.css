@@ -132,6 +132,7 @@
     height: 40rem;
     padding: 0;
     gap: 5rem;
+    margin-top: -5rem;
   }
 
   .w-right {
