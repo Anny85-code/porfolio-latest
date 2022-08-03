@@ -6,6 +6,7 @@ import budget from '../../img/budget.png';
 import dravel from '../../img/dravel.png';
 import food from '../../img/food.png';
 import seaport from '../../img/seaport.png';
+import covid19port from '../../img/covid19port.png';
 import foofforallport1 from '../../img/foofforallport1.png';
 import { themeContext } from '../../Context';
 
@@ -68,6 +69,15 @@ const Portfolio = () => {
             rel="noopener noreferrer"
           >
             <img src={seaport} alt="" />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a
+            href="https://github.com/Anny85-code/covid19-tracker"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src={covid19port} alt="" />
           </a>
         </SwiperSlide>
       </Swiper>
