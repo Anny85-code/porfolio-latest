@@ -27,7 +27,6 @@ const Intro = () => {
       {/* left name side */}
       <div className='i-left'>
         <div className='i-name'>
-          {/* yahan change hy darkmode ka */}
           <span style={{ color: darkMode ? 'white' : '' }}>
             Hello! &nbsp;I&apos;m
           </span>
