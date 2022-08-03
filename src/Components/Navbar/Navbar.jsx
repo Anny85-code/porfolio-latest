@@ -61,9 +61,7 @@ const Navbar = () => {
     <div className='n-wrapper' id='Navbar'>
       {/* left */}
       <div className='n-left'>
-        {/* <div className="n-name">Anny</div> */}
         <img src={Anny} alt='Anny' />
-        {/* <img src={annyman} alt="Anny" /> */}
         <Toggle />
       </div>
       {/* right */}
@@ -133,6 +131,7 @@ const Navbar = () => {
             </Link>
           </li>
         ))}
+          {/* <Toggle /> */}
       </ul>
     </div>
   );

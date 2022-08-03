@@ -76,10 +76,6 @@
   margin: 40px -40px 0 0;
 }
 
-.menuNav.showMenu {
-  width: 100%;
-}
-
 #menu-link {
   display: block;
   padding: 10px 40px;
@@ -132,5 +128,9 @@
   cursor: pointer;
   display: block;
   }
+
+  .menuNav.showMenu {
+  width: 100%;
+}
 
 }
