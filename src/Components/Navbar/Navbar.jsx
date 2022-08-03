@@ -45,11 +45,14 @@ const Navbar = () => {
 
   const handleToggle = () => {
     setNavbarOpen((prev) => !prev);
+    document.querySelector('.menuNav').style.display = 'block';
   };
 
   const closeMenu = () => {
     setNavbarOpen(false);
   };
+
+  
 
   return (
     <div className='n-wrapper' id='Navbar'>
@@ -103,7 +106,7 @@ const Navbar = () => {
           <FiMenu style={{ color: '#fff', width: '40px', height: '40px' }} />
         )}
       </button>
-      <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
+      <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`} >
         {links.map((link) => (
           <li key={link.id}>
             <Link

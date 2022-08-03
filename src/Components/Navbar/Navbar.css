@@ -63,7 +63,7 @@
   overflow-y: scroll;
   list-style: none;
   position: fixed;
-  top: 0;
+  top: 2;
   background: darkcyan;
   right: 0;
   bottom: 0;
@@ -72,6 +72,8 @@
   overflow: hidden;
   max-width: 350px;
   z-index: 9;
+  display: none;
+  margin: 40px -40px 0 0;
 }
 
 .menuNav.showMenu {
