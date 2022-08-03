@@ -63,7 +63,7 @@
   list-style: none;
   position: fixed;
   top: 20;
-  background: darkcyan;
+  background: #b89b19;
   right: 0;
   bottom: 0;
   height: 100vh;
@@ -79,7 +79,7 @@
   display: block;
   padding: 20px 0;
   text-decoration: none;
-  color: #3fffd2;
+  color: blue;
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 40px;

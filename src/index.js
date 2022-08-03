@@ -1,17 +1,10 @@
 import React from 'react';
-// import ReactDOM from 'react-dom/client';
 import { createRoot } from 'react-dom/client';
 import App from './App';
 import { ThemeProvider } from './Context';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
-
-// ReactDOM.render(
-//   <ThemeProvider>
-//     <App />
-//   </ThemeProvider>,
-//   document.getElementById('root'),
 
 root.render(
   <React.StrictMode>
@@ -21,4 +14,3 @@ root.render(
     ,
   </React.StrictMode>,
 );
-// );
