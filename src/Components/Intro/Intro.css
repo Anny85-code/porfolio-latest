@@ -1,7 +1,7 @@
 .Intro {
   display: flex;
   height: 77vh;
-  margin-top: 6rem;
+  margin-top: 10rem;
   padding: 0.5rem 3.5rem; 
 }
 
@@ -121,7 +121,8 @@
     flex-direction: column;
     gap: 7rem;
     height: 64rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
+    padding: 1rem;
   }
 
   .i-right {
@@ -145,4 +146,9 @@
   .i-right > :nth-child(3) {
     left: 28%;
   }
+
+  .i-icons {
+  margin-top: 0.5rem;
+  
+}
 }
