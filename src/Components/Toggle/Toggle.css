@@ -21,9 +21,12 @@
 }
 
 @media screen and (max-width: 480px) {
-  .toggle {
+  /* .toggle {
     display: none;
-  }
+  } */
+.toggle {
+  opacity: 0;
+}
   .toggle {
   margin: 0 1rem;
   }

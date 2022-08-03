@@ -25,7 +25,6 @@
   width: 9rem;
 }
 
-
 .n-name {
   font-size: 1.3rem;
   font-weight: bold;
@@ -95,42 +94,45 @@
     display: none;
   }
 
+  .toggle {
+    z-index: 10;
+  }
+
   .n-left > img {
-  height: 2rem;
-  width: 6rem;
-}
+    height: 2rem;
+    width: 6rem;
+  }
 
-.n-left {
-  gap: 1px;
-}
+  .n-left {
+    gap: 1px;
+  }
 
-.n-button {
-  display: none;
-}
+  .n-button {
+    display: none;
+  }
 
-#Navbar {
-  height: 10vh;
-  width: 100%;
-}
+  #Navbar {
+    height: 10vh;
+    width: 100%;
+  }
 
-.btn-nav {
-  position: fixed;
-  right: 20px;
-  top: 10px;
-  z-index: 10;
-  cursor: pointer;
-  background: transparent;
-  border: none;
-  font-weight: bold;
-  color: var(--orange);
-  border: none;
-  outline: none;
-  cursor: pointer;
-  display: block;
+  .btn-nav {
+    position: fixed;
+    right: 20px;
+    top: 10px;
+    z-index: 10;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    font-weight: bold;
+    color: var(--orange);
+    border: none;
+    outline: none;
+    cursor: pointer;
+    display: block;
   }
 
   .menuNav.showMenu {
-  width: 100%;
-}
-
+    width: 100%;
+  }
 }

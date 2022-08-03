@@ -47,22 +47,31 @@ const Navbar = () => {
   const handleToggle = () => {
     setNavbarOpen((prev) => !prev);
     document.querySelector('.menuNav').style.display = 'block';
+    document.querySelector('.toggle').style.opacity = '1';
     body.style.overflow = 'hidden';
   };
+
+  const windowSize = window.outerWidth;
 
   const closeMenu = () => {
     setNavbarOpen(false);
     body.style.overflow = 'auto';
+    if (windowSize >= 992) {
+      document.querySelector('.toggle').style.opacity = '1';
+    } else {
+      document.querySelector('.toggle').style.opacity = '0';
   };
-
-  
+    setTimeout(() => {
+      window.location.reload();
+    }, 1000);
+}
 
   return (
     <div className='n-wrapper' id='Navbar'>
       {/* left */}
       <div className='n-left'>
         <img src={Anny} alt='Anny' />
-        <Toggle />
+        <Toggle id='toggle' />
       </div>
       {/* right */}
       <div className='n-right'>
@@ -100,18 +109,21 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <button className='btn-nav' type='button' onClick={handleToggle}>
+      <button className='btn-nav' type='button'>
         {navbarOpen ? (
           <IoMdClose
+            className='toggleClose'
             style={{
               color: 'var(--orange)',
               width: '40px',
               height: '40px',
             }}
+            onClick={() => closeMenu()}
           />
         ) : (
           <FiMenu
             style={{ color: 'var(--orange)', width: '40px', height: '40px' }}
+            onClick={handleToggle}
           />
         )}
       </button>
@@ -120,7 +132,7 @@ const Navbar = () => {
           <li key={link.id}>
             <Link
               to={link.path}
-              activeClassName='active-link'
+              activeclassname='active-link'
               onClick={() => closeMenu()}
               spy={true}
               smooth={true}
@@ -131,7 +143,6 @@ const Navbar = () => {
             </Link>
           </li>
         ))}
-          {/* <Toggle /> */}
       </ul>
     </div>
   );
