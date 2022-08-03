@@ -1,9 +1,8 @@
 .footer {
   display: flex;
   align-items: center;
-  margin: -0.5rem -3.5rem;
-  position: relative;
-  margin-top: -7rem;
+  bottom: 0;
+  width: 100%;
 }
 
 .f-content {
@@ -29,7 +28,19 @@
 }
 
 @media screen and (max-width: 480px) {
+
+  .footer{
+    position: fixed;
+    font-size: 12px;
+    z-index: 3;
+  }
+
   .f-content {
     transform: scale(0.5);
+    margin-bottom: 6rem;
+  }
+
+  .f-icons{
+    display: none;
   }
 }

@@ -48,6 +48,7 @@ const Navbar = () => {
     setNavbarOpen((prev) => !prev);
     document.querySelector('.menuNav').style.display = 'block';
     document.querySelector('.toggle').style.opacity = '1';
+    document.querySelector('.footer').style.display = 'none';
     body.style.overflow = 'hidden';
   };
 
@@ -63,6 +64,7 @@ const Navbar = () => {
       }, 1000);
     } else {
       document.querySelector('.toggle').style.opacity = '0';
+      document.querySelector('.footer').style.display = 'flex';
   };
     
 }
