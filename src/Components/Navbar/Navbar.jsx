@@ -58,12 +58,13 @@ const Navbar = () => {
     body.style.overflow = 'auto';
     if (windowSize >= 992) {
       document.querySelector('.toggle').style.opacity = '1';
+      setTimeout(() => {
+        window.location.reload();
+      }, 1000);
     } else {
       document.querySelector('.toggle').style.opacity = '0';
   };
-    setTimeout(() => {
-      window.location.reload();
-    }, 1000);
+    
 }
 
   return (

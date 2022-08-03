@@ -62,7 +62,7 @@
   overflow-y: scroll;
   list-style: none;
   position: fixed;
-  top: 10;
+  top: 20;
   background: darkcyan;
   right: 0;
   bottom: 0;
@@ -77,7 +77,7 @@
 
 #menu-link {
   display: block;
-  padding: 10px 40px;
+  padding: 20px 0;
   text-decoration: none;
   color: #3fffd2;
   text-transform: uppercase;
@@ -96,6 +96,7 @@
 
   .toggle {
     z-index: 10;
+    margin: -15px 0 0 -100px;
   }
 
   .n-left > img {
@@ -119,7 +120,7 @@
   .btn-nav {
     position: fixed;
     right: 20px;
-    top: 10px;
+    top: 5px;
     z-index: 10;
     cursor: pointer;
     background: transparent;
