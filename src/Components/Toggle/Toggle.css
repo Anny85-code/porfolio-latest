@@ -19,3 +19,10 @@
   background: var(--orange);
   position: absolute;
 }
+
+@media screen and (max-width: 480px) {
+  .toggle {
+    opacity: 0;
+    margin: 0 1rem;
+  }
+}

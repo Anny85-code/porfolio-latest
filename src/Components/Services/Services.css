@@ -73,9 +73,14 @@
     display: flex;
     flex-direction: column;
     gap: 17rem;
+    margin: 10px;
   }
 
   .cards > * {
     position: static;
+  }
+
+  .awesome {
+    padding: 0.5rem 1rem;
   }
 }

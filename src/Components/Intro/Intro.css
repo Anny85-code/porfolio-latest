@@ -1,7 +1,8 @@
 .Intro {
   display: flex;
   height: 77vh;
-  margin-top: 6rem;
+  margin-top: 10rem;
+  padding: 0.5rem 3.5rem;
 }
 
 /* left side styling */
@@ -118,14 +119,15 @@
 @media screen and (max-width: 480px) {
   .Intro {
     flex-direction: column;
-    gap: 7rem;
-    height: 64rem;
-    margin-top: 2rem;
+    height: 54rem;
+    margin-top: 5rem;
+    padding: 1rem;
   }
 
   .i-right {
     transform: scale(0.8);
     left: -3rem;
+    margin-top: 4rem;
   }
 
   .i-right .blur {
@@ -142,6 +144,22 @@
   }
 
   .i-right > :nth-child(3) {
-    left: 28%;
+    left: 22%;
+  }
+
+  .i-icons {
+    margin-top: 0.5rem;
+  }
+
+  .i-left {
+    gap: 4rem;
+  }
+
+  .intro-img {
+    width: 325px;
+  }
+
+  .i-right > :nth-child(1) {
+    left: -35%;
   }
 }
