@@ -5,7 +5,6 @@ import { IoMdClose } from 'react-icons/io';
 import { FiMenu } from 'react-icons/fi';
 import Toggle from '../Toggle/Toggle';
 import Anny from '../../img/Anny.png';
-// import annyman from '../../img/annyman.png';
 import './Navbar.css';
 /* eslint-disable */
 const Navbar = () => {
@@ -14,32 +13,32 @@ const Navbar = () => {
   const links = [
     {
       id: 1,
-      path: '/',
+      path: 'home',
       text: 'Home',
     },
 
     {
       id: 2,
-      path: '/services',
+      path: 'services',
       text: 'Services',
     },
 
     {
       id: 3,
-      path: '/experience',
+      path: 'experience',
       text: 'Experience',
     },
 
     {
       id: 4,
-      path: '/portfolio',
+      path: 'portfolio',
       text: 'Portfolio',
     },
 
     {
       id: 5,
-      path: '/testimonials',
-      text: 'Testimonials',
+      path: 'testimonial',
+      text: 'Testimonial',
     },
   ];
 
@@ -109,7 +108,9 @@ const Navbar = () => {
             }}
           />
         ) : (
-          <FiMenu style={{ color: 'var(--orange)', width: '40px', height: '40px' }} />
+          <FiMenu
+            style={{ color: 'var(--orange)', width: '40px', height: '40px' }}
+          />
         )}
       </button>
       <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
@@ -119,6 +120,8 @@ const Navbar = () => {
               to={link.path}
               activeClassName='active-link'
               onClick={() => closeMenu()}
+              spy={true}
+              smooth={true}
               exact
               id='menu-link'
             >
