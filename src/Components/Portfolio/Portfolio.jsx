@@ -6,13 +6,14 @@ import budget from '../../img/budget.png';
 import dravel from '../../img/dravel.png';
 import food from '../../img/food.png';
 import seaport from '../../img/seaport.png';
+import foofforallport1 from '../../img/foofforallport1.png';
 import { themeContext } from '../../Context';
 
 const Portfolio = () => {
   const theme = useContext(themeContext);
   const { darkMode } = theme.state;
   return (
-    <div className="portfolio" id="portfolio">
+    <div className='portfolio' id='portfolio'>
       {/* heading */}
       <span style={{ color: darkMode ? 'white' : '' }}>Recent Projects</span>
       <span>Portfolio</span>
@@ -22,42 +23,51 @@ const Portfolio = () => {
         spaceBetween={30}
         slidesPerView={3}
         grabCursor
-        className="portfolio-slider"
+        className='portfolio-slider'
       >
         <SwiperSlide>
           <a
-            href="https://github.com/Anny85-code/budget-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://github.com/Anny85-code/optimism'
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            <img src={budget} alt=" " />
+            <img src={foofforallport1} alt=' ' />
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a
-            href="https://github.com/Anny85-code/dravel_app"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://github.com/Anny85-code/budget-app'
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            <img src={dravel} alt="" />
+            <img src={budget} alt=' ' />
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a
-            href="https://github.com/Anny85-code/food-recipe"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://github.com/Anny85-code/dravel_app'
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            <img src={food} alt="" />
+            <img src={dravel} alt='' />
           </a>
         </SwiperSlide>
         <SwiperSlide>
           <a
-            href="https://github.com/Anny85-code/seafoodmenu"
-            target="_blank"
-            rel="noopener noreferrer"
+            href='https://github.com/Anny85-code/food-recipe'
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            <img src={seaport} alt="" />
+            <img src={food} alt='' />
+          </a>
+        </SwiperSlide>
+        <SwiperSlide>
+          <a
+            href='https://github.com/Anny85-code/seafoodmenu'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <img src={seaport} alt='' />
           </a>
         </SwiperSlide>
       </Swiper>
