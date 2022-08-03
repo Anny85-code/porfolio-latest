@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
-import { NavLink } from 'react-router-dom';
+// import { NavLink } from 'react-dom/client';
 import { Link } from 'react-scroll';
+import { IoMdClose } from 'react-icons/io';
+import { FiMenu } from 'react-icons/fi';
 import Toggle from '../Toggle/Toggle';
 import Anny from '../../img/Anny.png';
 // import annyman from '../../img/annyman.png';
@@ -18,41 +20,26 @@ const Navbar = () => {
 
     {
       id: 2,
-      path: '/about',
-      text: 'About',
+      path: '/services',
+      text: 'Services',
     },
 
     {
       id: 3,
-      path: '/our service',
-      text: 'Our Services',
+      path: '/experience',
+      text: 'Experience',
     },
 
     {
       id: 4,
-      path: '/projects',
-      text: 'Projects',
+      path: '/portfolio',
+      text: 'Portfolio',
     },
 
     {
       id: 5,
-      path: '/blog',
-      text: 'Blog',
-    },
-    {
-      id: 6,
-      path: '/new',
-      text: 'News',
-    },
-    {
-      id: 7,
-      path: '/contact',
-      text: 'Contact',
-    },
-    {
-      id: 8,
-      path: '/search',
-      text: 'Search',
+      path: '/testimonials',
+      text: 'Testimonials',
     },
   ];
 
@@ -109,7 +96,7 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <button className='btn' type='button' onClick={handleToggle}>
+      <button className='btn-nav' type='button' onClick={handleToggle}>
         {navbarOpen ? (
           <IoMdClose style={{ color: '#fff', width: '40px', height: '40px' }} />
         ) : (
@@ -119,14 +106,15 @@ const Navbar = () => {
       <ul className={`menuNav ${navbarOpen ? ' showMenu' : ''}`}>
         {links.map((link) => (
           <li key={link.id}>
-            <NavLink
+            <Link
               to={link.path}
               activeClassName='active-link'
               onClick={() => closeMenu()}
               exact
+              id='menu-link'
             >
               {link.text}
-            </NavLink>
+            </Link>
           </li>
         ))}
       </ul>

@@ -23,7 +23,7 @@ const Works = () => {
           {/* dark Mode */}
           <span style={{ color: darkMode ? 'white' : '' }}>Technologies</span>
           <span>Stacks</span>
-          <spane>
+          <span>
             I can provide an end-to-end service, and can be involved in projects
             <br />
             that involve databases and building user-friendly websites. This can
@@ -31,7 +31,7 @@ const Works = () => {
             extend to working with clients
             <br />
             during the planning phase of projects
-          </spane>
+          </span>
           <Link to="contact" smooth spy>
             <button type="button" className="button s-button">Hire Me</button>
           </Link>
