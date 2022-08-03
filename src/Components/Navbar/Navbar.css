@@ -63,7 +63,7 @@
   overflow-y: scroll;
   list-style: none;
   position: fixed;
-  top: 2;
+  top: 10;
   background: darkcyan;
   right: 0;
   bottom: 0;
@@ -87,6 +87,7 @@
   color: #3fffd2;
   text-transform: uppercase;
   font-weight: bold;
+  margin-top: 40px;
 }
 
 .btn-nav {
@@ -131,5 +132,5 @@
   cursor: pointer;
   display: block;
   }
-  
+
 }

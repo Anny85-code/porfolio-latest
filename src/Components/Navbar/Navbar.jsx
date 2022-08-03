@@ -42,13 +42,17 @@ const Navbar = () => {
     },
   ];
 
+  const body = document.querySelector('body');
+
   const handleToggle = () => {
     setNavbarOpen((prev) => !prev);
     document.querySelector('.menuNav').style.display = 'block';
+    body.style.overflow = 'hidden';
   };
 
   const closeMenu = () => {
     setNavbarOpen(false);
+    body.style.overflow = 'auto';
   };
 
   
