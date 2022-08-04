@@ -10,7 +10,7 @@ const Footer = () => {
 
   return (
     <div className="footer">
-      <img src={secondwave2} alt="" style={{ width: '100%' }} />
+      <img src={secondwave2} alt="" style={{ width: '100%' }} id="footer-img" />
       <div className="f-content">
         <span>uaniekan@gmail.com</span>
         <div className="f-icons">
