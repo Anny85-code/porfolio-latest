@@ -33,7 +33,7 @@ const Works = () => {
             during the planning phase of projects
           </span>
           <Link to="contact" smooth spy>
-            <button type="button" className="button s-button">Hire Me</button>
+            <button type="button" className="button s-button bounce">Hire Me</button>
           </Link>
           <div className="blur s-blur1" style={{ background: '#ABF1FF94' }} />
         </div>

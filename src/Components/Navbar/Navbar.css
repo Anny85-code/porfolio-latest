@@ -72,6 +72,7 @@
   z-index: 9;
   display: none;
   margin: 40px -40px 0 0;
+  transition: all 3s ease-in-out;
 }
 
 #menu-link {
@@ -82,6 +83,19 @@
   text-transform: uppercase;
   font-weight: bold;
   margin-top: 40px;
+  animation: menu-link-animation 1s ease-in-out;
+}
+
+@keyframes menu-link-animation {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 .btn-nav {

@@ -37,7 +37,7 @@ const Services = () => {
           rel="noopener noreferrer"
           download
         >
-          <button type="button" className="button s-button"> Get my resume</button>
+          <button type="button" className="button s-button bounce"> Get my resume</button>
         </a>
         <div className="blur s-blur1" style={{ background: '#ABF1FF94' }} />
       </div>
