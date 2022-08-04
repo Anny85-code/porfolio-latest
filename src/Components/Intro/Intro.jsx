@@ -23,58 +23,60 @@ const Intro = () => {
   const { darkMode } = theme.state;
   /* eslint-disable */
   return (
-    <div className='Intro' id='Intro'>
+    <div className="Intro" id="Intro">
       {/* left name side */}
-      <div className='i-left'>
-        <div className='i-name'>
+      <div className="i-left">
+        <div className="i-name">
           <span style={{ color: darkMode ? 'white' : '' }}>
             Hello! &nbsp;I&apos;m
           </span>
           <span>Anny</span>
           <span>
             Full-Stack Developer with high level of experience in web designing
-            and development, maintain the databases,  and handle backend operations of the application, and ensure an error-free development testing and deploying the application as well.
+            and development, maintain the databases, and handle backend
+            operations of the application, and ensure an error-free development
+            testing and deploying the application as well.
           </span>
         </div>
-        <Link to='contact' smooth spy>
-          <button type='button' className='button i-button'>
+        <Link to="contact" smooth spy>
+          <button type="button" className="button i-button bounce">
             Hire me
           </button>
         </Link>
         {/* social icons */}
-        <div className='i-icons'>
-          <a href='https://github.com/Anny85-code'>
-            <img src={Github} alt='Github' />
+        <div className="i-icons">
+          <a href="https://github.com/Anny85-code">
+            <img src={Github} alt="Github" />
           </a>
-          <a href='https://www.linkedin.com/in/aniekan-udo'>
-            <img src={LinkedIn} alt='LinkedIn' />
+          <a href="https://www.linkedin.com/in/aniekan-udo">
+            <img src={LinkedIn} alt="LinkedIn" />
           </a>
-          <a href='https://www.instagram.com/udoanny/'>
-            <img src={Instagram} alt='Instagram' />
+          <a href="https://www.instagram.com/udoanny/">
+            <img src={Instagram} alt="Instagram" />
           </a>
         </div>
       </div>
       {/* right image side */}
-      <div className='i-right'>
-        <img src={Vector1} alt='' />
-        <img src={purpleblur2} alt='' />
-        <img className='intro-img' src={anny1} alt='' />
+      <div className="i-right">
+        <img src={Vector1} alt="" />
+        <img src={purpleblur2} alt="" />
+        <img className="intro-img" src={anny1} alt="" />
         {/* animation */}
         <motion.img
           initial={{ left: '-36%' }}
           whileInView={{ left: '-24%' }}
           transition={transition}
           src={glassesimoji}
-          alt=''
+          alt=""
         />
 
         <motion.div
           initial={{ top: '-4%', left: '74%' }}
           whileInView={{ left: '68%' }}
           transition={transition}
-          className='floating-div'
+          className="floating-div"
         >
-          <FloatinDiv img={crown} text1='Web' text2='Developer' />
+          <FloatinDiv img={crown} text1="Web" text2="Developer" />
         </motion.div>
 
         {/* animation */}
@@ -82,14 +84,14 @@ const Intro = () => {
           initial={{ left: '9rem', top: '18rem' }}
           whileInView={{ left: '0rem' }}
           transition={transition}
-          className='floating-div'
+          className="floating-div"
         >
           {/* floatinDiv mein change hy dark mode ka */}
-          <FloatinDiv img={thumbup} text1='Best Design' text2='Award' />
+          <FloatinDiv img={thumbup} text1="Best Design" text2="Award" />
         </motion.div>
-        <div className='blur' style={{ background: 'rgb(238 210 255)' }} />
+        <div className="blur" style={{ background: 'rgb(238 210 255)' }} />
         <div
-          className='blur'
+          className="blur"
           style={{
             background: '#C1F5FF',
             top: '17rem',

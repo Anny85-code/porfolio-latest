@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import { NavLink } from 'react-dom/client';
 import { Link } from 'react-scroll';
 import { IoMdClose } from 'react-icons/io';
 import { FiMenu } from 'react-icons/fi';
@@ -8,7 +7,6 @@ import Anny from '../../img/Anny.png';
 import './Navbar.css';
 /* eslint-disable */
 const Navbar = () => {
-
   const [navbarOpen, setNavbarOpen] = useState(false);
   const links = [
     {
@@ -47,7 +45,9 @@ const Navbar = () => {
   const handleToggle = () => {
     setNavbarOpen((prev) => !prev);
     document.querySelector('.menuNav').style.display = 'block';
+    setTimeout(() => {
     document.querySelector('.toggle').style.opacity = '1';
+    }, 3000);
     document.querySelector('.footer').style.display = 'none';
     body.style.overflow = 'hidden';
   };
@@ -65,57 +65,56 @@ const Navbar = () => {
     } else {
       document.querySelector('.toggle').style.opacity = '0';
       document.querySelector('.footer').style.display = 'flex';
+    }
   };
-    
-}
 
   return (
-    <div className='n-wrapper' id='Navbar'>
+    <div className="n-wrapper" id="Navbar">
       {/* left */}
-      <div className='n-left'>
-        <img src={Anny} alt='Anny' />
-        <Toggle id='toggle' />
+      <div className="n-left">
+        <img src={Anny} alt="Anny" />
+        <Toggle id="toggle" />
       </div>
       {/* right */}
-      <div className='n-right'>
-        <div className='n-list'>
+      <div className="n-right">
+        <div className="n-list">
           <ul style={{ listStyleType: 'none' }}>
             <li>
-              <Link activeClass='active' to='Navbar' spy={true} smooth={true}>
+              <Link activeClass="active" to="Navbar" spy={true} smooth={true}>
                 Home
               </Link>
             </li>
             <li>
-              <Link to='services' spy={true} smooth={true}>
+              <Link to="services" spy={true} smooth={true}>
                 Serivces
               </Link>
             </li>
             <li>
-              <Link to='works' spy={true} smooth={true}>
+              <Link to="works" spy={true} smooth={true}>
                 Experience
               </Link>
             </li>
             <li>
-              <Link to='portfolio' spy={true} smooth={true}>
+              <Link to="portfolio" spy={true} smooth={true}>
                 Protfolio
               </Link>
             </li>
             <li>
-              <Link to='testimonial' spy={true} smooth={true}>
+              <Link to="testimonial" spy={true} smooth={true}>
                 Testimonial
               </Link>
             </li>
           </ul>
         </div>
-        <Link to='contact' spy={true} smooth={true}>
-          <button className='button n-button'>Contact</button>
+        <Link to="contact" spy={true} smooth={true}>
+          <button className="button n-button bounce">Contact</button>
         </Link>
       </div>
 
-      <button className='btn-nav' type='button'>
+      <button className="btn-nav" type="button">
         {navbarOpen ? (
           <IoMdClose
-            className='toggleClose'
+            className="toggleClose"
             style={{
               color: 'var(--orange)',
               width: '40px',
@@ -135,12 +134,12 @@ const Navbar = () => {
           <li key={link.id}>
             <Link
               to={link.path}
-              activeclassname='active-link'
+              activeclassname="active-link"
               onClick={() => closeMenu()}
               spy={true}
               smooth={true}
               exact
-              id='menu-link'
+              id="menu-link"
             >
               {link.text}
             </Link>
