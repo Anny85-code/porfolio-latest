@@ -27,10 +27,17 @@ const Intro = () => {
       {/* left name side */}
       <div className="i-left">
         <div className="i-name">
-          <span style={{ color: darkMode ? 'white' : '' }}>
-            Hello! &nbsp;I&apos;m
-          </span>
-          <span>Anny</span>
+          <div>
+            <img
+              src="https://emoji.gg/assets/emoji/wavegif_1860.gif"
+              width="40"
+              height="40"
+            />
+            <span style={{ color: darkMode ? 'white' : '' }}>
+              Hello! &nbsp;I&apos;m
+            </span>
+          </div>
+          <span>Aniekan</span>
           <span>
             Full-Stack Developer with high level of experience in web designing
             and development, maintain the databases, and handle backend
