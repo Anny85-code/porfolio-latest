@@ -38,7 +38,7 @@ const Intro = () => {
             </span>
           </div>
           <span>Aniekan</span>
-          <span>
+          <span style={{ color: darkMode ? 'white' : '' }}>
             Full-Stack Developer with high level of experience in web designing
             and development, maintain the databases, and handle backend
             operations of the application, and ensure an error-free development
