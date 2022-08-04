@@ -16,6 +16,7 @@ You can check it out at [link](https://anny-portfolio.herokuapp.com/)
 
 - React
 - Css
+- Scss
 - Bootstrap
 - JavaScript
 
