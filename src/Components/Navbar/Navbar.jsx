@@ -66,7 +66,7 @@ const Navbar = () => {
       document.querySelector('.toggle').style.opacity = '0';
       setTimeout(() => {
       document.querySelector('.footer').style.display = 'flex';
-      }, 3000);
+      }, 2000);
     }
   };
 
