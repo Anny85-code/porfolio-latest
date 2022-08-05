@@ -19,8 +19,26 @@ const Services = () => {
     type: 'spring',
   };
 
+  function reveal() {
+    const reveals = document.querySelectorAll('.reveal');
+
+    for (let i = 0; i < reveals.length; i += 1) {
+      const windowHeight = window.innerHeight;
+      const elementTop = reveals[i].getBoundingClientRect().top;
+      const elementVisible = 150;
+
+      if (elementTop < windowHeight - elementVisible) {
+        reveals[i].classList.add('active');
+      } else {
+        reveals[i].classList.remove('active');
+      }
+    }
+  }
+
+  window.addEventListener('scroll', reveal);
+
   return (
-    <div className="services" id="services">
+    <div className="services reveal" id="services">
       {/* left side */}
       <div className="awesome">
         {/* dark mode */}
