@@ -40,6 +40,12 @@
   border-radius: 19px;
 }
 
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .portfolio {
+    margin-top: -15rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .portfolio {
     padding: 0.5rem 1rem;

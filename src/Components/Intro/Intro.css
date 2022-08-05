@@ -152,6 +152,10 @@
   .i-right > :nth-child(1) {
     left: -15%;
   }
+
+  .floatingDiv{
+    margin-top: -60px;
+  }
 }
 
 @media screen and (max-width: 480px) {

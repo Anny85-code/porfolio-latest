@@ -75,6 +75,12 @@
   background: var(--orange);
 }
 
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .t-wrapper {
+    margin-top: -15rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .t-wrapper {
     padding: 0.5rem 1rem;
