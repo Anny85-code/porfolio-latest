@@ -22,7 +22,7 @@ const Footer = () => {
           ©
           {Foter()}
           &nbsp;
-          Anny Udo portfolio website
+          Aniekan Udo portfolio website
         </span>
       </div>
     </div>
