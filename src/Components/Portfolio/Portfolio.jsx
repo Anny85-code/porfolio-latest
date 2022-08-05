@@ -50,7 +50,7 @@ const Portfolio = () => {
   }];
 
   return (
-    <div className="portfolio" id="portfolio">
+    <div className="portfolio reveal" id="portfolio">
       <span style={{ color: darkMode ? 'white' : '' }}>Recent Projects</span>
       <span>Portfolio</span>
 
