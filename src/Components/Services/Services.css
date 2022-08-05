@@ -72,6 +72,12 @@
   opacity: 1;
 }
 
+@media screen and (min-width: 1400px) and (max-width: 1600px) {
+  .services {
+    margin-top: -10rem;
+  }
+}
+
 @media screen and (max-width: 480px) {
   .services {
     margin-top: 0;
