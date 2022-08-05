@@ -47,7 +47,7 @@ const Navbar = () => {
     document.querySelector('.menuNav').style.display = 'block';
     setTimeout(() => {
     document.querySelector('.toggle').style.opacity = '1';
-    }, 3000);
+    }, 2000);
     document.querySelector('.footer').style.display = 'none';
     body.style.overflow = 'hidden';
   };
