@@ -137,6 +137,10 @@
   }
 }
 
+.floatingDiv {
+    margin-top: -40px;
+  }
+
 @media screen and (min-width: 480px) and (max-width: 1100px) {
   .Intro {
     margin-top: 15rem;
