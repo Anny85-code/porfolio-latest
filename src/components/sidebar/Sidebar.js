@@ -7,16 +7,13 @@ class Sidebar extends Component {
   render() {
     return (
       <div className='sidebar'>
-        <div
-          style={{ color: 'black', fontWeight: 'bold' }}
-          className='tagtop'
-        >
+        <div style={{ color: '#fff', fontWeight: 'bold' }} className='tagtop'>
           # tech_enthusiast
         </div>
-        <div style={{ color: 'black', fontWeight: 'bold' }} className=''>
+        <div style={{ color: '#fff', fontWeight: 'bold' }} className=''>
           # hello_world
         </div>
-        <div style={{ color: 'black', fontWeight: 'bold' }} className=''>
+        <div style={{ color: '#fff', fontWeight: 'bold' }} className=''>
           # coding
         </div>
         <h1>
@@ -26,13 +23,15 @@ class Sidebar extends Component {
         </h1>
 
         <img src={logo} alt='logo' />
-        <p style={{ color: 'black', fontWeight: 'bold' }} className='gmail'>
+        <p style={{ color: '#fff', fontWeight: 'bold' }} className='gmail'>
           <a
             href='https://mail.google.com/mail/u/0/#inbox?compose=CllgCJftvBffjPmxWxvfHWRHWnhTbpQgPxBxvkcnPpFpFqbhrXMCHXSJTsCXCVLsQzgRcVLpnPL'
             rel='opener noreferrer'
             target='_blank'
             className='fa fa-envelope'
-          ></a>{' '}
+          >
+            <span id='git'>git</span>
+          </a>{' '}
           aniekaudo@yahoo.com
         </p>
 
@@ -68,7 +67,9 @@ class Sidebar extends Component {
                 rel='opener noreferrer'
                 target='_blank'
                 className='fa fas fa-github fa-lg'
-              ></a>
+              >
+                <span id='git'>git</span>
+              </a>
             </li>
             <li className='sidebar-nav-icons'>
               <a
@@ -76,7 +77,9 @@ class Sidebar extends Component {
                 rel='opener noreferrer'
                 target='_blank'
                 className='fa fas fa-linkedin fa-lg'
-              ></a>
+              >
+                <span id='git'>git</span>
+              </a>
             </li>
             <li className='sidebar-nav-icons'>
               <a
@@ -84,7 +87,9 @@ class Sidebar extends Component {
                 rel='opener noreferrer'
                 target='_blank'
                 className='fa fas fa-twitter fa-lg'
-              ></a>
+              >
+                <span id='git'>git</span>
+              </a>
             </li>
             <li className='sidebar-nav-icons'>
               <a
@@ -92,7 +97,9 @@ class Sidebar extends Component {
                 rel='opener noreferrer'
                 target='_blank'
                 className='fa fas fa-instagram fa-lg'
-              ></a>
+              >
+                <span id='git'>git</span>
+              </a>
             </li>
             <li className='sidebar-nav-icons'>
               <a
@@ -100,7 +107,9 @@ class Sidebar extends Component {
                 rel='opener noreferrer'
                 target='_blank'
                 className='fa fas fa-envelope fa-lg'
-              ></a>
+              >
+                <span id='git'>git</span>
+              </a>
             </li>
             <li className='sidebar-nav-icons'>
               <a
@@ -108,21 +117,25 @@ class Sidebar extends Component {
                 rel='opener noreferrer'
                 target='_blank'
                 className='fa fas fa-facebook fa-lg'
-              ></a>
+              >
+                <span id='git'>git</span>
+              </a>
             </li>
           </ul>
         </div>
         <div
           style={{
-            color: 'black',
+            color: '#fff',
             fontWeight: 'bold',
             paddingTop: '30%'
           }}
           className='tagtop'
         >
           Made with{' '}
-          <a href='#' style={{ textDecoration: 'none' }} className='fa fas fa-heart fa-lg'></a> by
-          me.
+          <a href='/#' style={{ textDecoration: 'none' }} className='fa fas fa-heart fa-lg'>
+            <span id='git'>git</span>
+          </a>{' '}
+          by me.
         </div>
       </div>
     );

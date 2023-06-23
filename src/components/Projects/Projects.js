@@ -1,65 +1,81 @@
 import React from 'react';
 import classes from './Projects.module.css';
-import bookheap from '../images/bookheap.png';
-import chess from '../images/chess.png';
-import shopping from '../images/shopping-app.png';
-import travel from '../images/travel-log.png';
-import definition from '../images/definition.png';
-import memes from '../images/memes.png';
-import superhero from '../images/superhero.png';
+import bookheap from '../images/food4all.png';
+import chess from '../images/seaport.png';
+import shopping from '../images/budget.png';
+import travel from '../images/dravel.png';
+import jobhunters from '../images/Landingpage1.png';
+import definition from '../images/food.png';
+import memes from '../images/hendreximage.png';
+import superhero from '../images/covid19port.png';
 import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
 
 // Web projects
 const cardItem = [
   {
-    link: 'https://bookheap-app.netlify.app/',
-    title: 'Online Book Store',
+    link: 'https://optimismfoodforall.com',
+    title: 'Food distribution app',
     techStack: 'Tech Stack: MERN Stack',
-    desc: 'It is a book selling web app built in a MERN stack . You can sell books by uploading images and can also see what others are selling.',
-    image: bookheap
+    desc: 'A food distribution tracking app serves as a centralized platform that enables efficient management and tracking of the entire food distribution process.',
+    image: bookheap,
+    source: 'https://github.com/Anny85-code/optimism'
   },
   {
-    link: 'https://chess-web-online.netlify.app/',
-    title: 'Realtime Online Chess',
-    techStack: 'Tech Stack- ReactJs, NodeJS, Express, Socket.io.',
-    desc: 'Play real time chess with your friends online by sharing a link.',
-    image: chess
+    link: 'https://jobhuntters-1o08qomm3-brytebee.vercel.app/',
+    title: 'Job hunters app',
+    techStack: 'MERN Stack',
+    desc: 'The Jobhunters app allows users to create coverletters, resumes with AI and also uploads their existing resumes and finetunes it with the power of AI',
+    image: jobhunters,
+    source: 'https://github.com/Automation-Affairs-Ltd/jobhunters-fe'
   },
   {
-    link: 'https://travel-log-frontend-two.vercel.app/',
-    title: 'Travel Log',
-    techStack: 'Tech Stack- MERN Stack, Mapbox',
-    desc: 'A full stack application to store / list places you have visited. You can log every visit on map.',
-    image: travel
+    link: 'https://649548422bafcc4a260e6388--merry-starlight-c676b9.netlify.app/',
+    title: 'Sea food menu app',
+    techStack: 'Tech Stack- JavaScript, NodeJS, API,',
+    desc: 'This project is seafood menu app. That Retrieves data from API and used Involvement API for likes and comments. Test for data retrieved from API and for comments.',
+    image: chess,
+    source: 'https://github.com/Anny85-code/seafoodmenu'
   },
   {
-    link: 'https://shopnowhere.netlify.app/',
-    title: 'Shopping-Store',
-    techStack: 'Tech Stack- React, Redux, Formik',
-    desc: 'Shopping store built with React and Redux',
-    image: shopping
+    link: 'https://dravel-app.vercel.app/',
+    title: 'Dravel app',
+    techStack: 'Tech Stack- MERN Stack',
+    desc: 'A full stack application that allow users to book and reserve a places they like to visit. You can log every reservation and visits.',
+    image: travel,
+    source: 'https://github.com/Anny85-code/dravel_app'
   },
   {
-    link: 'https://play.google.com/store/apps/details?id=com.thesachin.your_dictionary',
-    title: 'Definition Finder',
-    techStack: 'Tech Stack: Flutter',
-    desc: 'Definition Finder is absolutely free online dictionary with every word you look up. Millions of definitions from the most trusted source.',
-    image: definition
+    link: 'https://budget-app-rail-0b47f5951d21.herokuapp.com/',
+    title: 'Buget app',
+    techStack: 'Tech Stack- Ruby on Rails, Postgres',
+    desc: 'This is a budget app that allows user to track different transactions and create new ones',
+    image: shopping,
+    source: 'https://github.com/Anny85-code/budget-app'
   },
   {
-    link: 'https://play.google.com/store/apps/details?id=com.thesachin.superheroes',
-    title: 'My Superhero',
-    techStack: 'Tech Stack- Flutter',
-    desc: 'My SuperHero app provides all SuperHeroes and Villians data like powerstats, full name from all the universes.',
-    image: superhero
+    link: 'https://recipe-app-online-5c6310dd16a2.herokuapp.com/',
+    title: 'Food Recipes App',
+    techStack: 'Tech Stack: Ruby on Rails, Postgres',
+    desc: 'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
+    image: definition,
+    source: 'https://github.com/Anny85-code/food-recipe'
   },
   {
-    link: 'https://play.google.com/store/apps/details?id=com.thesachin.memestemplate',
-    title: 'Indian Memes Templates',
-    techStack: 'Tech Stack- Flutter',
-    desc: ' Indian meme templates - Memeशाला contains a wide range of Indian meme templates including Bollywood, political, Indian shows. You can edit and create memes too.',
-    image: memes
+    link: 'https://covid19-tracker-zeta-eight.vercel.app/',
+    title: 'Covid19 Report App',
+    techStack: 'Tech Stack- ReactJS, API',
+    desc: 'In this project I used the real COVID-19 data from Narrativa API. It is mobile application for a daily tracking of Covid 19 global data for each country.',
+    image: superhero,
+    source: 'https://github.com/Anny85-code/covid19-tracker'
+  },
+  {
+    link: 'https://www.hendrexresources.com/',
+    title: 'Industrial web app',
+    techStack: 'Tech Stack- ReactJS',
+    desc: ' This is an industrial web app that showcase the services of the company and also allow users to contact the company.',
+    image: memes,
+    source: 'https://github.com/Anny85-code/private'
   }
 ];
 
@@ -67,7 +83,7 @@ export default function Projects() {
   const getProjectCard = (cardItem) => {
     return (
       <li>
-        <a href={cardItem.link} className={classes.card} target='_blank'>
+        <a href={cardItem.link} className={classes.card} target='_blank' rel='opener noreferrer'>
           <img src={cardItem.image} className={classes.card__image} alt='' />
           <div className={classes.card__overlay}>
             <div className={classes.card__header}>
@@ -80,6 +96,9 @@ export default function Projects() {
               </div>
             </div>
             <p className={classes.card__description}>{cardItem.desc}</p>
+            <a href={cardItem.source}>
+              <button type='button' className={classes.projectBtn}>view source</button>
+            </a>
           </div>
         </a>
       </li>
