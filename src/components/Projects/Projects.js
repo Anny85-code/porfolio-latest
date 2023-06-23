@@ -1,5 +1,5 @@
 import React from 'react';
-import classes from './Projects.module.css';
+import classes from './Projects.module.scss';
 import bookheap from '../images/food4all.png';
 import chess from '../images/seaport.png';
 import shopping from '../images/budget.png';
@@ -12,9 +12,9 @@ import ScrollAnimation from 'react-animate-on-scroll';
 import 'animate.css/animate.min.css';
 
 // Web projects
-const cardItem = [
+export const cardItem = [
   {
-    link: 'https://optimismfoodforall.com',
+    link: 'https://optimistfood4all.com/',
     title: 'Food distribution app',
     techStack: 'Tech Stack: MERN Stack',
     desc: 'A food distribution tracking app serves as a centralized platform that enables efficient management and tracking of the entire food distribution process.',
@@ -46,22 +46,6 @@ const cardItem = [
     source: 'https://github.com/Anny85-code/dravel_app'
   },
   {
-    link: 'https://budget-app-rail-0b47f5951d21.herokuapp.com/',
-    title: 'Buget app',
-    techStack: 'Tech Stack- Ruby on Rails, Postgres',
-    desc: 'This is a budget app that allows user to track different transactions and create new ones',
-    image: shopping,
-    source: 'https://github.com/Anny85-code/budget-app'
-  },
-  {
-    link: 'https://recipe-app-online-5c6310dd16a2.herokuapp.com/',
-    title: 'Food Recipes App',
-    techStack: 'Tech Stack: Ruby on Rails, Postgres',
-    desc: 'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
-    image: definition,
-    source: 'https://github.com/Anny85-code/food-recipe'
-  },
-  {
     link: 'https://covid19-tracker-zeta-eight.vercel.app/',
     title: 'Covid19 Report App',
     techStack: 'Tech Stack- ReactJS, API',
@@ -76,6 +60,22 @@ const cardItem = [
     desc: ' This is an industrial web app that showcase the services of the company and also allow users to contact the company.',
     image: memes,
     source: 'https://github.com/Anny85-code/private'
+  },
+  {
+    link: 'https://budget-app-rail-0b47f5951d21.herokuapp.com/',
+    title: 'Buget app',
+    techStack: 'Tech Stack- Ruby on Rails, Postgres',
+    desc: 'This is a budget app that allows user to track different transactions and create new ones',
+    image: shopping,
+    source: 'https://github.com/Anny85-code/budget-app'
+  },
+  {
+    link: 'https://recipe-app-online-5c6310dd16a2.herokuapp.com/',
+    title: 'Food Recipes App',
+    techStack: 'Tech Stack: Ruby on Rails, Postgres',
+    desc: 'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
+    image: definition,
+    source: 'https://github.com/Anny85-code/food-recipe'
   }
 ];
 
@@ -96,8 +96,10 @@ export default function Projects() {
               </div>
             </div>
             <p className={classes.card__description}>{cardItem.desc}</p>
-            <a href={cardItem.source}>
-              <button type='button' className={classes.projectBtn}>view source</button>
+            <a href={cardItem.source} target='_blank' rel='opener noreferrer'>
+              <button type='button' className={classes.projectBtn}>
+                view source
+              </button>
             </a>
           </div>
         </a>
@@ -121,12 +123,6 @@ export default function Projects() {
             return getProjectCard(item);
           })}
         </ul>
-        {/* <h2 className={classes.heading}>ANDROID APP PROJECTS</h2>
-        <ul className={classes.cards}>
-          {cardItemApps.map((item) => {
-            return getProjectCard(item);
-          })}
-        </ul> */}
       </ScrollAnimation>
     </div>
   );

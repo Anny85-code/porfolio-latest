@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Carousel } from 'react-responsive-carousel';
+import { HashLink as Link } from 'react-router-hash-link';
 import classes from './Carousel.module.css';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import 'animate.css/animate.min.css';
@@ -30,7 +31,7 @@ class CarouselImages extends Component {
             <div className={classes.h1}>
               <h1>I'm open for adventure!</h1>
               <a
-                href='https://drive.google.com/file/d/1XwQYRl06QtuNPT8v4fHkbajk1ll9LTbi/view?usp=sharing'
+                href='https://docs.google.com/document/d/1Qf_A4EI0IFHEtnfMM2rz_5Vl_33bbZg8sZ4Nq1tVGug/edit?usp=sharing'
                 rel='opener noreferrer'
                 target='_blank'
               >
@@ -43,21 +44,13 @@ class CarouselImages extends Component {
             <div className={classes.h2}>
               <h1> I love building</h1>
               <h1>THINGS!!</h1>
-              <a
-                href='https://github.com/mittalsam98?tab=repositories&q=&type=&language=javascript&sort=stargazers'
-                rel='opener noreferrer'
-                target='_blank'
-              >
+              <Link smooth to='/#projects'>
                 VIEW REACT PROJECTS <GoProject />
-              </a>
+              </Link>
               <div className={classes.secondButton}>
-                <a
-                  href='https://github.com/mittalsam98?tab=repositories&q=&type=&language=dart&sort='
-                  rel='opener noreferrer'
-                  target='_blank'
-                >
+                <Link smooth to='/#projects'>
                   VIEW RUBY on RAILS PROJECTS <GoProject />
-                </a>
+                </Link>
               </div>
             </div>
           </div>

@@ -25,10 +25,12 @@ class Interest extends Component {
               initiallyVisible={true}
             >
               <div className={classes.web}>
-                <h3>APP Develpoment</h3>
+                <h3>Front End Develpoment</h3>
                 <p>
-                  I have knowledge of flutter development and have experience in building android
-                  and IOS applications. I also have live projects published on Google Play Store.
+                  I specialize in building visually appealing and interactive user interfaces that
+                  captivate users and enhance their online interactions. By leveraging my expertise
+                  in HTML, CSS, and JavaScript, I create seamless and intuitive web applications
+                  that deliver a seamless user experience across multiple devices.
                 </p>
               </div>
             </ScrollAnimation>
@@ -40,11 +42,14 @@ class Interest extends Component {
               initiallyVisible={true}
             >
               <div className={classes.app}>
-                <h3>Web Develpoment</h3>
+                <h3>Back End Develpoment</h3>
                 <p>
-                  I am a full stack web developer(MERN) and build websites using HTML, CSS,
-                  Javascript, ReactJs.
-                  <br /> I have also good grasp on Node and NoSQL(MongoDb).
+                  I specialize in building robust and scalable server-side architectures that drive
+                  dynamic web applications. Armed with my skills in programming languages like Ruby,
+                  Python, or Node.js, I create the backbone of web systems, handling data storage,
+                  processing, and retrieval.
+                  <br /> I work with databases, APIs, and server technologies to ensure seamless
+                  communication between the front-end and the back-end.
                 </p>
               </div>
             </ScrollAnimation>

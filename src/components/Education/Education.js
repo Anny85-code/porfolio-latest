@@ -35,20 +35,15 @@ class Education extends Component {
                           <MdWork />
                         </div>
                         <div className={classes.label}>
-                          <h2>
-                            Experience <span>July(2021)-Present</span>
-                          </h2>
+                          <h2>Experience</h2>
                           <p>
-                            I am currently working as <b>Software Developer Engineer</b> at{' '}
-                            <a target='_blank' href='https://www.springworks.in/'>
-                              <b>Springworks</b>
-                            </a>{' '}
                             <i>
-                              (previously Springrole and Springworks is a HR technology startup that
-                              is building tools and products to simplify recruiting and help
-                              organizations engage and retain their employees)
-                            </i>{' '}
-                            and boosting my professional skills.
+                              With over three years of experience under my belt, I have honed my
+                              skills and gained valuable insights as a professional in my field.
+                              Over this time, I have tackled various projects, collaborated with
+                              diverse teams, and overcome a range of challenges, all of which have
+                              contributed to my growth and expertise.
+                            </i>
                           </p>
                         </div>
                       </article>
@@ -65,12 +60,15 @@ class Education extends Component {
                           <MdSchool />
                         </div>
                         <div className={classes.label}>
-                          <h2>
-                            Undergraduation at SLIET <span>2017-2021</span>
-                          </h2>
+                          <h2>Microverse</h2>
                           <p>
-                            I completed my undergraduation in CSE (Computer Science and Engineering)
-                            from <a href='http://sliet.ac.in/'>SLIET</a> with overall 82.71%.
+                            <i>
+                              I learned software development professionally at Microverse, an online
+                              software development school where I harnessed my programming skills
+                              and learned how to work with API and frameworks. I’ve worked remotely
+                              and asynchronously with people across different time zones. I’m in the
+                              top 1% of GitHub active users in my country.
+                            </i>
                           </p>
                         </div>
                       </article>
@@ -88,11 +86,11 @@ class Education extends Component {
                         </div>
                         <div className={classes.label}>
                           <h2>
-                            Higher Education <span>2014-2016</span>
+                            Higher Education 
                           </h2>
                           <p>
-                            I have completed my higher education from HKIS with major subjects as
-                            Physics,Chemistry & Maths with 85% merit in CBSE board.{' '}
+                           Computer Science <br />
+                           <b>University of the people</b>
                           </p>
                         </div>
                       </article>
@@ -112,7 +110,7 @@ class Education extends Component {
                         <div className={classes.label}>
                           <h2>Internship</h2>
                           <p>
-                            Completed one month Internship in React Js with Internity Foundation
+                          Zuri <b>HNG</b>
                           </p>
                         </div>
                         <div className={classes.timeline_entry_inner}>

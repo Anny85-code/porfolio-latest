@@ -125,6 +125,10 @@
   margin: 4rem 2vw;
   padding: 0;
   list-style-type: none;
+
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
 }
 
 .card {
@@ -148,7 +152,6 @@
   left: 0;
   right: 0;
   z-index: 1;
-  /* border-radius: calc(var(--curve) * 1px); */
   background-color: #22223b;
   transform: translateY(100%);
   transition: 0.2s ease-in-out;

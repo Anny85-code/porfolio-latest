@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Router } from 'react-router-dom';
+import { BrowserRouter as Route, Routes } from 'react-router-dom';
 import Sidebar from './components/sidebar/Sidebar';
 import About from './components/about/About';
 import Education from './components/Education/Education';
@@ -11,7 +11,7 @@ import CarouselImages from './components/Carousel/Carousel';
 class App extends Component {
   render() {
     return (
-      <Router>
+        <>
         <div className='App'>
           <div className='side'>
             <nav className='navbar side navbar-expand-lg navbar-light p-0'>
@@ -29,7 +29,7 @@ class App extends Component {
               </div>
             </nav>
           </div>
-          <div className='main'>
+         <div className='main'>
             <CarouselImages />
             <Projects />
             <About />
@@ -37,7 +37,7 @@ class App extends Component {
             <Education />
           </div>
         </div>
-      </Router>
+         </>
     );
   }
 }
