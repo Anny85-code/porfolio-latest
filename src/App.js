@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import './App.css';
-import { BrowserRouter as Route, Routes } from 'react-router-dom';
 import Sidebar from './components/sidebar/Sidebar';
 import About from './components/about/About';
 import Education from './components/Education/Education';
@@ -10,6 +9,11 @@ import CarouselImages from './components/Carousel/Carousel';
 
 class App extends Component {
   render() {
+    document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.side').addEventListener('click', function () {
+      document.body.classList.toggle('overflow-hidden')
+    });
+  });
     return (
         <>
         <div className='App'>
