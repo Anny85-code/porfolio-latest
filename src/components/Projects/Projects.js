@@ -8,8 +8,7 @@ import jobhunters from '../images/Landingpage1.png';
 import definition from '../images/food.png';
 import memes from '../images/hendreximage.png';
 import superhero from '../images/covid19port.png';
-import ScrollAnimation from 'react-animate-on-scroll';
-import 'animate.css/animate.min.css';
+import { motion } from 'framer-motion';
 
 // Web projects
 export const cardItem = [
@@ -107,23 +106,44 @@ export default function Projects() {
     );
   };
 
+  const projectVariants = {
+    initial: { opacity: 0 },
+    animate: { opacity: 1 }
+  };
+
   return (
     <div className={classes.box} id='projects'>
-      <ScrollAnimation
-        offset={0}
-        animateIn='fadeInLeft'
-        duration={2.4}
-        animateOnce={true}
-        initiallyVisible={true}
+      <motion.div
+        className={classes.head}
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
       >
-        <span className={classes.head}>MY WORK</span>
-        <h2 className={classes.heading}>PROJECTS</h2>
-        <ul className={classes.cards}>
-          {cardItem.map((item) => {
-            return getProjectCard(item);
-          })}
-        </ul>
-      </ScrollAnimation>
+        MY WORK
+      </motion.div>
+      <motion.h2
+        className={classes.heading}
+        initial={{ opacity: 0, y: -50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8, delay: 0.2 }}
+      >
+        PROJECTS
+      </motion.h2>
+      <ul className={classes.cards}>
+        {cardItem.map((item) => {
+          return (
+            <motion.li
+              key={item.title}
+              initial='initial'
+              animate='animate'
+              variants={projectVariants}
+              transition={{ duration: 0.8 }}
+            >
+              {getProjectCard(item)}
+            </motion.li>
+          );
+        })}
+      </ul>
     </div>
   );
 }
