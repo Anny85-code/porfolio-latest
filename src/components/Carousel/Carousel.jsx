@@ -29,7 +29,7 @@ class CarouselImages extends Component {
           <div className={classes.image_container}>
             <img className={classes.image} src={Hello} alt='myImage' />
             <div className={classes.h1}>
-              <h1>I'm open for adventure!</h1>
+              <h1>I'm open to adventure!</h1>
               <a
                 href='https://docs.google.com/document/d/1Qf_A4EI0IFHEtnfMM2rz_5Vl_33bbZg8sZ4Nq1tVGug/edit?usp=sharing'
                 rel='opener noreferrer'
