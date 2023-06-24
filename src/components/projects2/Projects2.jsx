@@ -59,7 +59,7 @@ export default function Projects2() {
 
   return (
     <div className={classes.box2} id='projects2'>
-      <ul className={classes.cards2}>
+      <ul className={classes.cards}>
         {cardItem.map((item) => {
           return (
             <motion.li

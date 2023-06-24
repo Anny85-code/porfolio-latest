@@ -2,12 +2,10 @@
 
 .box {
   margin: 40px 15px 0 15px;
-  // margin-top: 40px;
 }
 
 .box2 {
   margin: -30px 15px 15px 15px;
-  // margin-top: 0;
 }
 
 .head {
@@ -30,19 +28,6 @@
   line-height: 1.8;
 }
 .cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  gap: 2rem;
-  margin: 4rem 2vw;
-  padding: 0;
-  list-style-type: none;
-
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  }
-}
-
-.cards2 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   gap: 2rem;
