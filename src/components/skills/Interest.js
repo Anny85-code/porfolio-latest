@@ -45,7 +45,7 @@ class Interest extends Component {
             </motion.div>
             <motion.div variants={contentVariants} transition={{ duration: 0.8 }}>
               <div className={classes.other}>
-                <h3>Other's Interest</h3>
+                <h3>Other Interest</h3>
                 <p>
                   I also have a decent hand in developing websites with WordPress or other CMS
                   platforms.
