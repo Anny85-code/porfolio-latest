@@ -48,7 +48,7 @@ class CarouselImages extends Component {
                 VIEW REACT PROJECTS <GoProject />
               </Link>
               <div className={classes.secondButton}>
-                <Link smooth to='/#projects'>
+                <Link smooth to='/#projects2'>
                   VIEW RUBY on RAILS PROJECTS <GoProject />
                 </Link>
               </div>
