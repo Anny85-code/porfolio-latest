@@ -10,6 +10,11 @@ import CarouselImages from './components/Carousel/Carousel';
 
 class App extends Component {
   render() {
+    document.addEventListener('DOMContentLoaded', function() {
+    document.querySelector('.side').addEventListener('click', function () {
+      document.body.classList.toggle('overflow-hidden')
+    });
+  });
     return (
         <>
         <div className='App'>
