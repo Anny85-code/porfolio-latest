@@ -16,7 +16,7 @@ class App extends Component {
     });
   });
     return (
-        <>
+      <>
         <div className='App'>
           <div className='side'>
             <nav className='navbar side navbar-expand-lg navbar-light p-0'>
@@ -25,16 +25,16 @@ class App extends Component {
                 type='button'
                 data-toggle='collapse'
                 data-target='#navbarSupportedContent'
-                style={{ zIndex: '1' }}
+                style={{ zIndex: '1', background: 'rgb(57, 55, 55)' }}
               >
-                <span className='navbar-toggler-icon'></span>
+                <span className='navbar-toggler-icon' />
               </button>
               <div className='collapse navbar-collapse' id='navbarSupportedContent'>
                 <Sidebar />
               </div>
             </nav>
           </div>
-         <div className='main'>
+          <div className='main'>
             <CarouselImages />
             <Projects />
             <Projects2 />
@@ -43,7 +43,7 @@ class App extends Component {
             <Education />
           </div>
         </div>
-         </>
+      </>
     );
   }
 }
