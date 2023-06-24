@@ -6,6 +6,7 @@ import Education from './components/Education/Education';
 import Interest from './components/skills/Interest';
 import Projects from './components/Projects/Projects.js';
 import CarouselImages from './components/Carousel/Carousel';
+import Projects2 from './components/projects2/Projects2';
 
 class App extends Component {
   render() {
@@ -36,6 +37,7 @@ class App extends Component {
          <div className='main'>
             <CarouselImages />
             <Projects />
+            <Projects2 />
             <About />
             <Interest />
             <Education />

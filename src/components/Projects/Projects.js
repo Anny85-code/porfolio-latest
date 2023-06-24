@@ -2,10 +2,8 @@ import React from 'react';
 import classes from './Projects.module.scss';
 import bookheap from '../images/food4all.png';
 import chess from '../images/seaport.png';
-import shopping from '../images/budget.png';
 import travel from '../images/dravel.png';
 import jobhunters from '../images/Landingpage1.png';
-import definition from '../images/food.png';
 import memes from '../images/hendreximage.png';
 import superhero from '../images/covid19port.png';
 import { motion } from 'framer-motion';
@@ -60,22 +58,6 @@ export const cardItem = [
     image: memes,
     source: 'https://github.com/Anny85-code/private'
   },
-  {
-    link: 'https://budget-app-rail-0b47f5951d21.herokuapp.com/',
-    title: 'Buget app',
-    techStack: 'Tech Stack- Ruby on Rails, Postgres',
-    desc: 'This is a budget app that allows user to track different transactions and create new ones',
-    image: shopping,
-    source: 'https://github.com/Anny85-code/budget-app'
-  },
-  {
-    link: 'https://recipe-app-online-5c6310dd16a2.herokuapp.com/',
-    title: 'Food Recipes App',
-    techStack: 'Tech Stack: Ruby on Rails, Postgres',
-    desc: 'The Recipe app keeps track of all your recipes, ingredients, and inventory. It will allow you to save ingredients, keep track of what you have, create recipes, and generate a shopping list based on what you have and what you are missing from a recipe.',
-    image: definition,
-    source: 'https://github.com/Anny85-code/food-recipe'
-  }
 ];
 
 export default function Projects() {
