@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './Sidebar.css';
+import './Sidebar.scss';
 import { HashLink as Link } from 'react-router-hash-link';
 import logo from '../images/anny.jpeg';
 
@@ -126,9 +126,8 @@ class Sidebar extends Component {
           style={{
             color: '#fff',
             fontWeight: 'bold',
-            paddingTop: '30%'
           }}
-          className='tagtop'
+          className='tagtop tagdown'
         >
           Made with{' '}
           <a href='/#' style={{ textDecoration: 'none' }} className='fa fas fa-heart fa-lg'>

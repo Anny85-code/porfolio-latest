@@ -18,6 +18,12 @@
   margin-top: 40px;
 }
 
+.tagdown {
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
+}
+
 .h1_links {
   text-decoration: none;
   font-family: 'Aclonica', sans-serif;
@@ -65,6 +71,10 @@
 
 .flip-card-back {
   margin-top: 50px;
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
+  }
 }
 
 .fa-lg {
