@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Sidebar.css';
 import { HashLink as Link } from 'react-router-hash-link';
-import logo from '../images/anny-photo.jpg';
+import logo from '../images/anny.jpeg';
 
 class Sidebar extends Component {
   render() {
