@@ -126,6 +126,7 @@ class Sidebar extends Component {
           style={{
             color: '#fff',
             fontWeight: 'bold',
+            paddingTop: '10px'
           }}
           className='tagtop tagdown'
         >
