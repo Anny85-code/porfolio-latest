@@ -5,7 +5,7 @@ import chess from '../images/seaport.png';
 import travel from '../images/dravel.png';
 import jobhunters from '../images/Landingpage1.png';
 import memes from '../images/hendreximage.png';
-import superhero from '../images/covid19port.png';
+import superhero from '../images/techverse.png';
 import { motion } from 'framer-motion';
 
 // Web projects
@@ -43,12 +43,12 @@ export const cardItem = [
     source: 'https://github.com/Anny85-code/dravel_app'
   },
   {
-    link: 'https://covid19-tracker-zeta-eight.vercel.app/',
-    title: 'Covid19 Report App',
-    techStack: 'Tech Stack- ReactJS, API',
-    desc: 'In this project I used the real COVID-19 data from Narrativa API. It is mobile application for a daily tracking of Covid 19 global data for each country.',
+    link: 'https://www.techverseacademy.com/',
+    title: 'Tech Verse Academy website',
+    techStack: 'Tech Stack- NextJS, NodeJS, MongoDB',
+    desc: 'This is a website for a tech academy that offers courses in web development, data science and machine learning.',
     image: superhero,
-    source: 'https://github.com/Anny85-code/covid19-tracker'
+    source: 'https://github.com/TechVerseBase/techverse_fe'
   },
   {
     link: 'https://www.hendrexresources.com/',
@@ -57,7 +57,7 @@ export const cardItem = [
     desc: ' This is an industrial web app that showcase the services of the company and also allow users to contact the company.',
     image: memes,
     source: 'https://github.com/Anny85-code/private'
-  },
+  }
 ];
 
 export default function Projects() {

@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap');
 .image {
-  height: 734px;
+  height: 754px;
 }
 
 .h1 {
@@ -83,8 +83,9 @@
 
 @media (max-width: 768px) {
   .image {
-    height: 600px;
+    height: 750px;
   }
+
   .h1 a {
     width: 120px;
     font-size: 0.8rem;
